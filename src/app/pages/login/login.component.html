@@ -1,20 +1,27 @@
-
-<mat-card>
+<div class="flex flex-row h-screen">
+  <form class="flex-1 max-w-md px-4 flex items-center">
     <div>
-
-        <mat-card-content class="form-container">
-            <!-- <mat-card-header class="text-xl mb-5 font-semibold">
-
-                <mat-card-title class="text-green-600">Your Real State Genie</mat-card-title>
-            </mat-card-header> -->
-            <app-custom-icon-text-field [icon]="'person'" [placeholder]="'Enter your username'"/>
-            <app-custom-icon-text-field [icon]="'lock'" [placeholder]="'Enter your password'"/>
-            <app-custom-button>
-                Login
-            </app-custom-button>
-        </mat-card-content>
-        <div class="image">
-            <img src="assets/house.jpg" alt="" srcset="">
-        </div>
+      <app-custom-icon-text-field
+        [icon]="'person'"
+        [placeholder]="'Enter your username'"
+      />
+      <app-custom-icon-text-field
+        [icon]="'lock'"
+        [placeholder]="'Enter your password'"
+      />
+      <app-custom-button> Login </app-custom-button>
+      <p class="mt-4 text-gray-600">
+        Don't have an account?
+        <a class="text-blue-500 cursor-pointer" routerLink="/signup">Sign up</a>
+      </p>
     </div>
-</mat-card>
+  </form>
+  <div class="image flex-1 bg-red-800">
+    <img
+      class="object-cover w-full h-full"
+      src="assets/house.jpg"
+      alt=""
+      srcset=""
+    />
+  </div>
+</div>

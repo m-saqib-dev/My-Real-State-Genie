@@ -1,0 +1,46 @@
+<div class="flex flex-row h-screen">
+  <form class="flex-1 max-w-md px-4 flex items-center">
+    <div>
+      <app-custom-icon-text-field
+        [icon]="'mail'"
+        [placeholder]="'Enter your email'"
+      ></app-custom-icon-text-field>
+      
+      <app-custom-icon-text-field
+        [icon]="'person'"
+        [placeholder]="'Enter your full name'"
+      ></app-custom-icon-text-field>
+      <app-custom-icon-text-field
+        [icon]="'calendar'"
+        [placeholder]="'Enter your date of birth'"
+        
+      ></app-custom-icon-text-field>
+      <app-custom-icon-text-field
+        [icon]="'location_on'"
+        [placeholder]="'Enter your address'"
+      ></app-custom-icon-text-field>
+      <app-custom-icon-text-field
+        [icon]="'phone'"
+        [placeholder]="'Enter your phone number'"
+      ></app-custom-icon-text-field>
+      <app-custom-icon-text-field
+        [icon]="'lock'"
+        [placeholder]="'Enter your password'"
+        
+      ></app-custom-icon-text-field>
+      <app-custom-icon-text-field
+        [icon]="'lock_open'"
+        [placeholder]="'Confirm your password'"
+        
+      ></app-custom-icon-text-field>
+      <app-custom-button> Signup </app-custom-button>
+    </div>
+  </form>
+  <div class="image flex-1 bg-green-800">
+    <img
+      class="object-cover w-full h-full"
+      src="assets/signup-image.jpg"
+      alt="Signup Image"
+    />
+  </div>
+</div>

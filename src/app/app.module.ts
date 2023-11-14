@@ -28,6 +28,7 @@ import { CustomButtonTextFieldComponent } from './_shared/custom-text-fields/cus
 import { CustomIconButtonTextFieldComponent } from './_shared/custom-text-fields/custom-icon-button-text-field/custom-icon-button-text-field.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CustomButtonComponent } from './_shared/custom-button/custom-button.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -43,25 +44,24 @@ import { CustomButtonComponent } from './_shared/custom-button/custom-button.com
     CustomButtonTextFieldComponent,
     CustomIconButtonTextFieldComponent,
     LoginComponent,
-    CustomButtonComponent
+    CustomButtonComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatInputModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
-    ReactiveFormsModule,
-
-    MatPaginatorModule,
-
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatInputModule,
+        MatSelectModule,
+        MatRadioModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
